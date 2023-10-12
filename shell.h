@@ -12,6 +12,6 @@
 
 
 
-
+char *get_line.c(void);
 
 #endif
