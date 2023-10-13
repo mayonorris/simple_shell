@@ -19,7 +19,8 @@ int main(int ac, char **argv)
 
         if(my_line == NULL)
         {
-                write(STDOUT_FILENO, "\n", 1);
+                write(STDOUT_FILENO, my_line, strlen(my_line));
+		write(STDOUT_FILENO, "\n", 1);
                 return (check_exec);
 
         }
