@@ -11,6 +11,6 @@
 #include <sys/wait.h>
 
 
-char *get_line.c(void);
+char *get_line(void);
 
 #endif
