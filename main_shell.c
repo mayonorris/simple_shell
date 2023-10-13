@@ -24,6 +24,7 @@ int main(int ac, char **argv)
 
         }
 	write(STDOUT_FILENO, my_line, strlen(my_line));
+	write(STDOUT_FILENO, "\n", 1);
         free(my_line);
         /*command = get_token(my_line);*/
 
