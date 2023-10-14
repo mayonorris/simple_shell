@@ -8,7 +8,7 @@
 int main(int ac, char **argv)
 {
         char *my_line = NULL;
-        /*char **command = NULL;*/
+        char **command = NULL;
         int check_exec = 0;
         (void) ac;
         (void) argv;
@@ -23,10 +23,8 @@ int main(int ac, char **argv)
                 return (check_exec);
 
         }
-	write(STDOUT_FILENO, my_line, strlen(my_line));
-	write(STDOUT_FILENO, "\n", 1);
         free(my_line);
-        /*command = get_token(my_line);*/
+        command = get_token(my_line);
 
         }
 
