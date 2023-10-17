@@ -7,26 +7,22 @@
 */
 int main(int ac, char **argv)
 {
-        char *my_line = NULL;
-        char **command = NULL;
-        int check_exec = 0;
-        (void) ac;
-        (void) argv;
+    char *my_line = NULL;
+    int check_exec = 0;
+    (void) ac;
+    (void) argv;
 
-        while(1)
-        {
+    while(1)
+    {
         my_line = get_line();
 
         if(my_line == NULL)
         {
-		write(STDOUT_FILENO, "\n", 1);
-                return (check_exec);
-
+            write(STDOUT_FILENO, "\n", 1);
+            return (check_exec);
         }
+
         free(my_line);
-        command = get_token(my_line);
-
-        }
-
-
+    }
 }
+

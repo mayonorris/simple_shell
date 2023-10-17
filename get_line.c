@@ -6,7 +6,7 @@ char *get_line(void)
         size_t my_len = 0;
         size_t store_line;
 
-        write(STDOUT_FILENO, ">", 2);
+        write(STDOUT_FILENO, "DitoMayo$ ", 10);
         store_line = getline(&my_line, &my_len, stdin);
 
          if (my_line == NULL)
@@ -21,7 +21,5 @@ char *get_line(void)
         }
 
         return (my_line);
-
-
 
 }
